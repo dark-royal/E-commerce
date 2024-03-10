@@ -14,7 +14,7 @@ public class Users {
 
   }
 
-  public String findUserName(String fullName){
+  public String findUser(String fullName){
       return  null;
   }
 

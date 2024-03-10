@@ -1,29 +1,48 @@
+import java.util.ArrayList;
+
 public class Product {
 
-    private int ProductId;
+    private int productId;
     private String productName;
-    private double price;
+    private double productPrice;
     private String productDescription;
     private ProductCategory productCategory;
 
-    public void createProduct(String product){
+
+    public Product(int productId,String productDescription,double productPrice,String productName,ProductCategory productCategory1){
+        this.productId = productId;
+        this.productName = productName;
+        this.productDescription = productDescription;
+        this.productPrice = productPrice;
+    }
+
+    public void setProductName(String productName){
+        this.productName = productName;
 
     }
 
-    public Product findProduct(String product){
-        return null;
+    public String getProductName(){
+        return productName;
     }
 
-    public void deleteProduct(String product){
-
+    public void setProductDescription(String productName){
+        this.productDescription = productDescription;
     }
 
-    public void addToCart(String product){
-
+    public String getProductDescription(){
+        return productDescription;
     }
 
-    public void viewDetails(){
+    public void setProductPrice(double price){
+        this.productPrice = price;
+    }
 
+    public double getProductPrice(){
+        return productPrice;
+    }
+
+    public int getProductId(){
+        return productId;
     }
 
 
