@@ -45,6 +45,11 @@ public class Product {
         return productId;
     }
 
+    public int generateProductId(){
+        productId++;
+        return productId;
+    }
+
 
 
 
